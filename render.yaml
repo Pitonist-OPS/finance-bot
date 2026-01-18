@@ -1,0 +1,11 @@
+services:
+  - type: worker
+    name: finance-bot
+    env: python
+    region: frankfurt   # или "oregon" — ближе к тебе
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python expense_bot.py"
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
