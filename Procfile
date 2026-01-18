@@ -1,1 +1,1 @@
-bot: python expense_bot.py
+bot: python test.py
